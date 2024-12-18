@@ -1,12 +1,8 @@
 import nextra from 'nextra'
 
 const withNextra = nextra({
-  defaultShowCopyCode: true,
-  search: {
-    codeblocks: false
-  },
-  latex: true,
-  contentDirBasePath: '/'
+  theme: 'nextra-theme-docs',
+  themeConfig: './theme.config.jsx'
 })
 
 export default withNextra()

@@ -28,14 +28,10 @@ export default {
               alt="Powered by Drivly"
               width={120}
               height={30}
-              style={{ filter: 'brightness(0) invert(1)' }}
               priority
             />
           </a>
         </div>
-        <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} Docs Template
-        </p>
       </div>
     )
   }
