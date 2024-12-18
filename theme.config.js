@@ -12,7 +12,8 @@ const themeConfig = {
   },
   docsRepositoryBase: 'https://github.com/ai-primitives/docs-template',
   footer: {
-    component: (
+    text: 'MIT License © 2024',
+    content: (
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', padding: '1rem 0' }}>
         <span>
           MIT {new Date().getFullYear()} © Nextra
