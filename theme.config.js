@@ -31,9 +31,7 @@ const themeConfig = {
     link: 'https://github.com/ai-primitives/docs-template'
   },
   docsRepositoryBase: 'https://github.com/ai-primitives/docs-template',
-  footer: {
-    component: Footer
-  }
+  footer: Footer
 }
 
 export default themeConfig
