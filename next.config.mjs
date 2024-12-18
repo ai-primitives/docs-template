@@ -10,4 +10,8 @@ const withNextra = nextra({
   contentDirBasePath: '/',
 })
 
-export default withNextra({})
+export default withNextra({
+  experimental: {
+    appDir: true
+  }
+})
