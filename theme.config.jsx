@@ -12,31 +12,29 @@ const themeConfig = {
     link: 'https://github.com/ai-primitives/docs-template'
   },
   docsRepositoryBase: 'https://github.com/ai-primitives/docs-template',
-  footer: function Footer() {
-    return (
-      <div className="flex w-full flex-col items-center sm:items-start">
-        <div>
-          <a
-            className="flex items-center gap-1 text-current"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://driv.ly"
-          >
-            <Image
-              src="/images/PoweredByDrivly.svg"
-              alt="Powered by Drivly"
-              width={120}
-              height={30}
-              style={{ filter: 'brightness(0) invert(1)' }}
-            />
-          </a>
-        </div>
-        <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} Docs Template
-        </p>
+  footer: (
+    <div className="flex w-full flex-col items-center sm:items-start">
+      <div>
+        <a
+          className="flex items-center gap-1 text-current"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://driv.ly"
+        >
+          <Image
+            src="/images/PoweredByDrivly.svg"
+            alt="Powered by Drivly"
+            width={120}
+            height={30}
+            style={{ filter: 'brightness(0) invert(1)' }}
+          />
+        </a>
       </div>
-    )
-  }
+      <p className="mt-6 text-xs">
+        © {new Date().getFullYear()} Docs Template
+      </p>
+    </div>
+  )
 }
 
 export default themeConfig
