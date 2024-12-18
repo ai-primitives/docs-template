@@ -34,7 +34,6 @@ export default async function RootLayout({ children }) {
           <b>Nextra</b> <span style={{ opacity: '60%' }}>The Next Docs Builder</span>
         </div>
       }
-      // Next.js discord server
       chatLink="https://discord.gg/BHZCzx83"
     />
   )
@@ -47,26 +46,6 @@ export default async function RootLayout({ children }) {
           banner={<Banner storageKey='Nextra 2'>Nextra 2 Alpha</Banner>}
           navbar={navbar}
           footer={<Footer />}
-          editLink='Edit this page on GitHub'
-          docsRepositoryBase='https://github.com/shuding/nextra/blob/main/examples/docs'
-          sidebar={{ defaultMenuCollapseLevel: 1 }}
-          pageMap={await getPageMap()}
-        >
-          {children}
-        </Layout>
-      </body>
-    </html>
-  )
-}
-
-  return (
-    <html lang='en' dir='ltr' suppressHydrationWarning>
-      <Head faviconGlyph='✦' />
-      <body>
-        <Layout
-          banner={<Banner storageKey='Nextra 2'>Nextra 2 Alpha</Banner>}
-          navbar={navbar}
-          footer={footer}
           editLink='Edit this page on GitHub'
           docsRepositoryBase='https://github.com/shuding/nextra/blob/main/examples/docs'
           sidebar={{ defaultMenuCollapseLevel: 1 }}
