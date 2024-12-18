@@ -3,12 +3,12 @@ import nextra from 'nextra'
 const withNextra = nextra({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.jsx',
-  defaultShowCopyCode: true,
   latex: true,
   search: {
-    codeblocks: false,
-  },
-  contentDirBasePath: '/',
+    codeblocks: false
+  }
 })
 
-export default withNextra()
+export default withNextra({
+  reactStrictMode: true
+})
