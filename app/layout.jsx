@@ -1,5 +1,5 @@
 /* eslint-env node */
-import { Layout, Navbar } from 'nextra-theme-docs'
+import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
@@ -45,7 +45,7 @@ export default async function RootLayout({ children }) {
         <Layout
           banner={<Banner storageKey='Nextra 2'>Nextra 2 Alpha</Banner>}
           navbar={navbar}
-          footer={true}
+          footer={<Footer />}
           editLink='Edit this page on GitHub'
           docsRepositoryBase='https://github.com/shuding/nextra/blob/main/examples/docs'
           sidebar={{ defaultMenuCollapseLevel: 1 }}
