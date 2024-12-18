@@ -2,11 +2,13 @@ import nextra from 'nextra'
 
 const withNextra = nextra({
   defaultShowCopyCode: true,
-  latex: true,
   search: {
-    codeblocks: false,
+    codeblocks: false
   },
+  latex: true,
   contentDirBasePath: '/',
+  staticImage: true,
+  codeHighlight: true
 })
 
 export default withNextra({
