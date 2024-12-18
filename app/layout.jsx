@@ -7,23 +7,17 @@ import 'nextra-theme-docs/style.css'
 export const { viewport } = Head
 
 export const metadata = {
-  metadataBase: new URL('https://nextra.site'),
+  metadataBase: new URL('https://docs-template.vercel.app'),
   title: {
-    template: '%s - Nextra',
+    template: '%s - Docs Template',
+    default: 'Docs Template'
   },
-  description: 'Nextra: the Next.js site builder',
-  applicationName: 'Nextra',
+  description: 'Documentation Template powered by Nextra',
+  applicationName: 'Docs Template',
   generator: 'Next.js',
-  appleWebApp: {
-    title: 'Nextra',
-  },
   other: {
-    'msapplication-TileImage': '/ms-icon-144x144.png',
-    'msapplication-TileColor': '#fff',
-  },
-  twitter: {
-    site: 'https://nextra.site',
-  },
+    'msapplication-TileColor': '#fff'
+  }
 }
 
 export default async function RootLayout({ children }) {
