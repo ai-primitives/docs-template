@@ -12,8 +12,8 @@ const themeConfig = {
     link: 'https://github.com/ai-primitives/docs-template'
   },
   docsRepositoryBase: 'https://github.com/ai-primitives/docs-template',
-  footer: {
-    content: (
+  footer: function Footer() {
+    return (
       <div className="flex w-full flex-col items-center sm:items-start">
         <div>
           <a
