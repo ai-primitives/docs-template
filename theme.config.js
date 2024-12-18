@@ -1,13 +1,19 @@
 import Image from 'next/image'
 
 const themeConfig = {
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Docs Template'
+    }
+  },
   logo: <span>Docs Template</span>,
   project: {
     link: 'https://github.com/ai-primitives/docs-template'
   },
+  docsRepositoryBase: 'https://github.com/ai-primitives/docs-template',
   footer: {
-    text: (
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+    component: (
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', padding: '1rem 0' }}>
         <span>
           MIT {new Date().getFullYear()} © Nextra
         </span>
