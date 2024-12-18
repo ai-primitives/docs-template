@@ -1,8 +1,12 @@
 import Image from 'next/image'
 
-export default {
+const themeConfig = {
+  logo: <span>Docs Template</span>,
+  project: {
+    link: 'https://github.com/ai-primitives/docs-template'
+  },
   footer: {
-    content: (
+    text: (
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
         <span>
           MIT {new Date().getFullYear()} © Nextra
@@ -20,3 +24,5 @@ export default {
     )
   }
 }
+
+export default themeConfig
