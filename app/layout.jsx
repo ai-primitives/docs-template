@@ -1,5 +1,5 @@
 /* eslint-env node */
-import { Footer, Layout, Navbar } from 'nextra-theme-docs'
+import { Layout } from '@nextra/theme-docs/layout'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
@@ -21,27 +21,14 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
-  const navbar = (
-    <Navbar
-      logo={
-        <div>
-          <b>Nextra</b> <span style={{ opacity: '60%' }}>The Next Docs Builder</span>
-        </div>
-      }
-      chatLink="https://discord.gg/BHZCzx83"
-    />
-  )
-
   return (
     <html lang='en' dir='ltr' suppressHydrationWarning>
       <Head faviconGlyph='✦' />
       <body>
         <Layout
           banner={<Banner storageKey='Nextra 2'>Nextra 2 Alpha</Banner>}
-          navbar={navbar}
-          footer={<Footer />}
           editLink='Edit this page on GitHub'
-          docsRepositoryBase='https://github.com/shuding/nextra/blob/main/examples/docs'
+          docsRepositoryBase='https://github.com/ai-primitives/docs-template'
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           pageMap={await getPageMap()}
         >
