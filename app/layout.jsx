@@ -1,30 +1,13 @@
 /* eslint-env node */
-import { Footer, Layout, Navbar } from 'nextra-theme-docs'
+import { Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import { Footer } from '../components/Footer'
 import 'nextra-theme-docs/style.css'
 
 export const { viewport } = Head
 
-export const metadata = {
-  metadataBase: new URL('https://nextra.site'),
-  title: {
-    template: '%s - Nextra',
-  },
-  description: 'Nextra: the Next.js site builder',
-  applicationName: 'Nextra',
-  generator: 'Next.js',
-  appleWebApp: {
-    title: 'Nextra',
-  },
-  other: {
-    'msapplication-TileImage': '/ms-icon-144x144.png',
-    'msapplication-TileColor': '#fff',
-  },
-  twitter: {
-    site: 'https://nextra.site',
-  },
-}
+// PLACEHOLDER: metadata object
 
 export default async function RootLayout({ children }) {
   const navbar = (
@@ -34,7 +17,6 @@ export default async function RootLayout({ children }) {
           <b>Nextra</b> <span style={{ opacity: '60%' }}>The Next Docs Builder</span>
         </div>
       }
-      // Next.js discord server
       chatLink="https://discord.gg/BHZCzx83"
     />
   )
