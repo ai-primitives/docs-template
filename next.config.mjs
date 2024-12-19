@@ -3,12 +3,11 @@ import nextra from 'nextra'
 const withNextra = nextra({
   latex: true,
   search: {
-    codeblocks: false,
+    codeblocks: false
   },
-  // contentDirBasePath: '/docs',
-  contentDirBasePath: '/',
+  contentDirBasePath: '/'
 })
 
 export default withNextra({
-  reactStrictMode: true,
+  reactStrictMode: true
 })
