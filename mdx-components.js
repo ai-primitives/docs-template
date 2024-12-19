@@ -1,8 +1,8 @@
-import { useMDXComponents as getDocsMDXComponents } from 'nextra-theme-docs'
+import { useMDXComponents as baseComponents } from '@mdx-js/react'
 
-const docsComponents = getDocsMDXComponents()
-
-export const useMDXComponents = (components) => ({
-  ...docsComponents,
-  ...components,
-})
+export function useMDXComponents(components) {
+  return {
+    ...baseComponents(components),
+    ...components
+  }
+}
