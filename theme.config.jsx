@@ -1,5 +1,6 @@
 import { useRouter } from 'next/navigation'
 import { useConfig } from 'nextra-theme-docs'
+import Image from 'next/image'
 
 export default {
   logo: <span>Docs Template</span>,
@@ -26,9 +27,23 @@ export default {
   },
   footer: {
     text: (
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full flex-col items-center sm:items-start">
         <div>
-          <span>MIT {new Date().getFullYear()} © AI Primitives.</span>
+          <a
+            className="flex items-center gap-1 text-current"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://driv.ly"
+            title="Powered by Drivly"
+          >
+            <Image
+              src="/images/PoweredByDrivly.svg"
+              alt="Powered by Drivly"
+              width={120}
+              height={30}
+              priority
+            />
+          </a>
         </div>
       </div>
     )
