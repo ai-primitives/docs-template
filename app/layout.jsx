@@ -1,40 +1,38 @@
-/* eslint-env node */
-import { Layout, Navbar } from 'nextra-theme-docs'
-import { Banner, Head } from 'nextra/components'
-import { getPageMap } from 'nextra/page-map'
+import { Inter } from 'next/font/google'
+import { Navbar } from 'nextra-theme-docs'
 import { Footer } from '../components/Footer'
 import 'nextra-theme-docs/style.css'
 
-export const { viewport } = Head
+const inter = Inter({ subsets: ['latin'] })
 
-// PLACEHOLDER: metadata object
+export const metadata = {
+  title: 'Docs Template',
+  description: 'Documentation Template for AI Primitives',
+}
 
-export default async function RootLayout({ children }) {
+export default function RootLayout({ children }) {
   const navbar = (
     <Navbar
       logo={
         <div>
-          <b>Nextra</b> <span style={{ opacity: '60%' }}>The Next Docs Builder</span>
+          <b>Docs Template</b>
+          <span className="opacity-60 ml-2">AI Primitives</span>
         </div>
       }
       chatLink="https://discord.gg/BHZCzx83"
     />
   )
+
   return (
-    <html lang='en' dir='ltr' suppressHydrationWarning>
-      <Head faviconGlyph='✦' />
-      <body>
-        <Layout
-          banner={<Banner storageKey='Nextra 2'>Nextra 2 Alpha</Banner>}
-          navbar={navbar}
-          footer={<Footer />}
-          editLink='Edit this page on GitHub'
-          docsRepositoryBase='https://github.com/shuding/nextra/blob/main/examples/docs'
-          sidebar={{ defaultMenuCollapseLevel: 1 }}
-          pageMap={await getPageMap()}
-        >
-          {children}
-        </Layout>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <div className="relative flex min-h-screen flex-col">
+          {navbar}
+          <main className="flex-auto">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
