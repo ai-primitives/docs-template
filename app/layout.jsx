@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import { Navbar } from 'nextra-theme-docs'
+import { useTheme } from 'nextra-theme-docs'
 import { Footer } from '../components/Footer'
 import 'nextra-theme-docs/style.css'
 
@@ -11,17 +11,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const navbar = (
-    <Navbar
-      logo={
-        <div>
-          <b>Docs Template</b>
-          <span className="opacity-60 ml-2">AI Primitives</span>
-        </div>
-      }
-      chatLink="https://discord.gg/BHZCzx83"
-    />
-  )
+  const { navbar } = useTheme()
 
   return (
     <html lang="en" suppressHydrationWarning>

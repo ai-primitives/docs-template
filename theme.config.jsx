@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import { useConfig } from 'nextra-theme-docs'
 
 export default {
@@ -16,7 +16,6 @@ export default {
     }
   },
   head: () => {
-    const { asPath } = useRouter()
     const { frontMatter } = useConfig()
     return (
       <>
