@@ -47,7 +47,7 @@ export default async function RootLayout({ children }) {
         <Layout
           banner={<Banner storageKey='MDXLD'>MDXLD v1.0 Released</Banner>}
           navbar={navbar}
-          footer={<Footer><a href='https://driv.ly'><Logo/></a></Footer>}
+          footer={<Footer><div className="flex justify-center"><a href='https://driv.ly'><Logo/></a></div></Footer>}
           editLink='Edit this page on GitHub'
           docsRepositoryBase='https://github.com/ai-primitives/docs-template/blob/main'
           sidebar={{ defaultMenuCollapseLevel: 1 }}
