@@ -23,7 +23,7 @@ export const metadata = {
     'msapplication-TileColor': '#fff',
   },
   twitter: {
-    site: 'https://nextra.site',
+    site: 'https://mdx.org.ai',
   },
 }
 

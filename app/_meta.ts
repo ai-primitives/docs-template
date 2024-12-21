@@ -1,3 +1,5 @@
+import type { MetaRecord } from 'nextra'
+
 export default {
   // index: {
   //   display: 'hidden',
@@ -10,4 +12,4 @@ export default {
   //   type: 'page',
   //   title: 'Blog',
   // },
-}
+} satisfies MetaRecord
