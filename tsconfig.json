@@ -32,7 +32,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "content/_meta.js"  ],
   "exclude": [
     "node_modules"
   ]
